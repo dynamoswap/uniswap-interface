@@ -54,7 +54,7 @@ interface CurrencySearchProps {
 function useSearchCurrencies(
   filteredSortedTokens: Currency[],
   debouncedQuery: string,
-  native: NativeCurrency | undefined,
+  native: NativeCurrency | Token | undefined,
   wrapped: Token | undefined,
   balances: any,
   onlyShowCurrenciesWithBalance: boolean,
